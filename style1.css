@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.column{
+  /* column-count: 4;
+  column-width: 100px; */
+  columns: 250px 4;
+  column-rule: 4px solid black;
+  column-gap: 3rem;
+}
+/* to remove only the top margin of a paragraph */
+.column p{
+  
+  margin-top: 0;
+}
+.column h2{
+  
+  text-transform: uppercase;
+  margin-top: 0;
+  background-color: #000;
+  color: rgb(29, 92, 186);
+  padding: 2rem;
+  /* break-before: column; */
+  break-inside: avoid;
+}
+.column .quote{
+  margin-top:2rem;
+  background-color: rgb(10, 48, 163);
+  
+  font-size: 3rem;
+  text-align: center;
+  color: bisque;
+  column-span: all;
+  display: flow-root;
+  
+  
+}
+.nowrap{
+  white-space: nowrap;
+  color: cornflowerblue
+
+}
