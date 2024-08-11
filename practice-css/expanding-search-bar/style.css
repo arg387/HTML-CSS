@@ -1,0 +1,46 @@
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --search-border: #bbb;
+  --search-focus-border: #3a71ca;
+}
+.hide{
+  border: 0;
+  clip-path: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  position: absolute;
+  width: 1px;
+
+}
+.container{
+  padding: 2em;
+  width: 80%;
+  margin: auto;
+}
+.Search-bar{
+  width: 30%;
+  line-height: 2;
+  outline: none;
+  border: 1px solid var(--search-border);
+  border-radius: 5px;
+}
+.Search-bar:focus{
+  width: 100%;
+  transition: margin-right 2s ease-in-out .5s;
+  border-color: var(--search-focus-border);
+}
+
+.Search-bar::placeholder{
+  font-weight: 200;
+}
+.Search-bar:focus::placeholder{
+  color: transparent;
+}

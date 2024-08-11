@@ -1,0 +1,45 @@
+
+:root{
+  --black: rgb(0,0,0);
+  --white: rgb(240, 248, 255);
+  --grad-color:#eeaf61;
+  --grad-color2:#fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-color5: #6a0d83;
+  --btn-color-hover: #fff;
+
+  
+}
+html,body{
+ background-color: var(--black);
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+.btn-border{
+  background: linear-gradient(115deg,#eeaf61,#fb9062,#ee5d6c,#ce4993,#6a0d83);
+  padding: 2px;
+}
+
+.btn-style{
+  border:none;
+  background:var(--black);
+  color:var(--white);
+  padding: 1em 1.5em;
+  font-family: inherit;
+  letter-spacing: .1em;
+  
+}
+.btn-border:hover{
+  background: linear-gradient(115deg,#fb9062,#ee5d6c,#ce4993,#6a0d83,#eeaf61);
+}
+.btn-border:hover .btn-style{
+  color: var(--btn-color-hover);
+  padding: 1.1em 1.6em;
+}
